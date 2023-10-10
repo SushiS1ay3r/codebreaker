@@ -1,0 +1,92 @@
+body
+{
+    margin: 0; 
+    font-family: fantasy;
+    font-weight: 300; 
+    background-size: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.videoContainer 
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.videoContainer video
+{
+    width: 100%;
+    height: 100%;
+}
+
+.textBox
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    background: black;
+    height: 100%;
+    width: 100%;
+    color: whitesmoke;
+    display: flex;
+    /**align-items: center;**/
+    justify-content: center;
+    font-size: 100px;
+    font-weight: 900;
+    mix-blend-mode: multiply;
+}
+
+.headerContainer 
+{
+            
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#codebreakerText
+{
+    font-size: 100px;
+    font-family: 'Rock Salt', cursive;
+}
+ 
+/* grid rules */
+
+.row {
+    clear: both;
+    
+}
+
+.limited 
+{
+    max-width: 1400px;
+    margin: auto;
+    
+}
+
+.column 
+{
+    float: left;
+    padding: 0; 
+    margin: 0 0 0; /*0 0 .75rem 0*/
+}
+
+.small-12
+{
+    width: 100%;  
+}
+
+.clearfix:after
+{
+    content: "";
+    display: table;
+    clear: both;
+    
+}
+
+

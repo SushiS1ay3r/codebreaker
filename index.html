@@ -1,0 +1,116 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name=“viewport” content=“width-device-width, initial-scale=1, maximum-scale=1”> 
+    <title>Authentication | Codebreaker 101</title>
+    <meta name="author" content="Daniel Huang">
+    <meta name="description" content="codebreaker"> 
+    <link rel="icon" type="image/png" href="images/anonymous.png">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="clearfix skullBG">
+        <div class="row limited">
+            <section class="column small-12">
+            </section>
+
+            <section class="column small-12" style="color: rgb(0, 162, 255); text-align: center;">
+                <h1>
+                    Hello User
+                </h1>
+
+                <p>
+                    Welcome to the Authentication Center.
+                </p>
+
+                <p>
+                    Please solve the following puzzle to proceed.
+                </p>
+            </section>
+
+            <section class="column small-12 puzzleArea" style="text-align: center; margin-top: 200px;">
+                <marquee direction="right" 
+                    behavior="alternate">
+                    <h2 style="color:rgb(230, 93, 93);">&nbsp What Cipher did Julius Caesar use?</h2><br/>
+                    <h2 style="color:rgb(230, 93, 93);">&nbsp &nbsp &nbsp &nbspCats have ____ lives.</h2><br/>
+                    <h2 style="color:rgb(230, 93, 93);">YZXYCZXYK (encoding and offsets right)</h2>
+                </marquee>
+            </section>
+
+
+            <section class="column small-12 submitArea" style="text-align: center; margin-top: 200px; color: black;">
+                <form method="POST" action="codebreaker.html" onsubmit="return validateInput(event)">
+                    <h2>
+                        Enter Below
+                    </h2>
+
+                    <p>
+                        <label>
+                            Username:
+                        </label>
+
+                        <input type="text" id="username" name="username">
+                    </p>
+                    
+
+                    <p>
+                       <label>
+                            Password:
+                        </label>
+
+                        <input type="password" id="password" name="password"> 
+                    </p>
+                    
+                    <div style="margin-top: 10px; text-align: center; color: red;" id="failMsg"></div>
+                    <div style="margin-top: 10px; text-align: center; color: rgb(43, 255, 0);" id="successMsg"></div>
+
+                    <input style="margin-top: 30px;" type="submit" value="submit">
+
+                    
+                </form>
+            </section>
+        </div>
+
+    </div>
+    
+
+
+</body>
+
+</html>
+
+
+
+<!-------------------------------->
+<!--Good Job on figuring the Caesar Cipher to INSPECT this page-->
+<!--LOOK HERE TO SOLVE THE PUZZLE-->
+<!--Username - Find the name of the Favicon-->
+<!--Password - Find the name of the background image used here and find the 3rd HASH of that name.-->
+<!--Found the name of the background image? Head to this website: https://decoded-mobile-hashing.herokuapp.com/-->

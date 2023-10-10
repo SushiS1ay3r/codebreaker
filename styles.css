@@ -1,0 +1,115 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+  
+
+body
+{
+    font-family: fantasy;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+  
+footer 
+{
+    background-color: black;
+    font-size: 1.2rem;
+}
+
+/* grid rules */
+
+.row {
+    clear: both;
+    
+}
+
+.limited 
+{
+    max-width: 1400px;
+    margin: auto;
+    
+}
+
+.column 
+{
+    float: left;
+    padding: 0; 
+    margin: 0 0 0; /*0 0 .75rem 0*/
+}
+
+.small-12
+{
+    width: 100%;  
+}
+
+.clearfix:after
+{
+    content: "";
+    display: table;
+    clear: both;
+    
+}
+
+.navU
+{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+}
+
+header img{
+    float: left;
+    height: 85px;
+    padding-right: 20px;
+    padding-top: 10px;
+    
+}
+
+header h1, header h2 {
+    margin: 0;
+    color: white;
+    font-weight: 300;
+    font: italic;
+}
+
+header h1 {
+    float: left;
+    padding: 2rem 0 0 0; 
+    font-size: 50px;
+}
+
+header h2 {
+    padding: .2rem 0 0 0;
+    font-size: 1.05rem; 
+}
+
+.center
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.skullBG
+{
+    font-family: monospace;
+    background-image: url("images/skull.png");
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+
+
+
+
