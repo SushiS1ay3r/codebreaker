@@ -6,7 +6,7 @@ function validateInput(event)
     let failMsg = document.getElementById("failMsg");
     let successMsg = document.getElementById("successMsg");
 
-    if (username !=="anonymous" && password !=="c62c53000686c40caac41095f304060c9421548a617b0e52c21cf34634bcfcee" || username==="" || password==="")
+    if (username !=="Caesar Cipher" || password !=="314159265")
     {
         failMsg.innerHTML = "Incorrect. Try Again :)";
         successMsg.innerHTML = "";

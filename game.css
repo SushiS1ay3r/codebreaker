@@ -98,10 +98,10 @@ header h2
     margin: auto;
 }
 
-.skullBG
+.hackerBG
 {
     font-family: monospace;
-    background-image: url("images/skull.png");
+    background-image: url("images/phoneBG.jpg");
     background-size: cover;
     min-height: 100vh;
     background-repeat: no-repeat;
@@ -110,37 +110,61 @@ header h2
 }
 
 
-.authMargin
+
+.para
 {
-    margin-top: 200px;
-    text-align: center; 
-    color: white;
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: rgb(94, 255, 65)
+}
+
+.sectionContainer
+{
+    padding: 10px;
+    width: 860px;
+    height: 920px;
+    background-color: rgb(176, 176, 176);
+    margin: 50px;
+}
+
+.textContainer
+{
+    width: 840px;
+    padding: 10px;
+    height: 900px;
+    background-color: rgb(0, 0, 0);
+}
+
+.turnerHeader
+{
+    color: red;
+    font-size: 120px;
+}
+
+
+#proceedButton
+{
+    /**CREDITS TO RICKZANUTTA https://codepen.io/rickzanutta/pen/RwJLQY **/
+    padding: 13px 0; 
+    border: 1px solid #333; 
+    color: #333; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    font-size: 13px; 
+    letter-spacing: 3px; 
+    transition: all .2s ease-in-out; 
+
+    /** my code **/
+    margin-left: 350px;
+    width: 300px;
+    height: 300px;
     font-size: 40px;
+
+    &:hover 
+    {
+        background: #333; 
+        border: 1px solid #333; 
+        color: #fefefe; 
+        border-radius: 30px; 
+    }
 }
-
-.authMargin2
-{
-    margin-top: 200px;
-    text-align: center; 
-    color: black;
-    font-size: 20px;
-}
-
-.authMargin3
-{
-    margin-top: 200px;
-    text-align: center; 
-    color: white;
-    font-size: 40px;
-}
-
-.calcEquation
-{
-    display: flex;
-    justify-content: center; 
-    width: 600px; 
-    height: 150px;
-    margin-left: 100px;
-}
-
-

@@ -8,6 +8,7 @@
     <meta name="author" content="Daniel Huang">
     <meta name="description" content="codebreaker"> 
     <link rel="icon" type="image/png" href="images/anonymous.png">
+    <link href="mobile.css" rel="stylesheet">
     <link href="normalize.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <script src="script.js"></script>
@@ -41,7 +42,7 @@
             <section class="column small-12">
             </section>
 
-            <section class="column small-12" style="color: rgb(0, 162, 255); text-align: center;">
+            <section class="column small-12 authMargin" style="color: rgb(0, 162, 255); text-align: center;">
                 <h1>
                     Hello User
                 </h1>
@@ -55,17 +56,15 @@
                 </p>
             </section>
 
-            <section class="column small-12 puzzleArea" style="text-align: center; margin-top: 200px;">
+            <section class="column small-12 puzzleArea authMargin2">
                 <marquee direction="right" 
                     behavior="alternate">
-                    <h2 style="color:rgb(230, 93, 93);">&nbsp What Cipher did Julius Caesar use?</h2><br/>
-                    <h2 style="color:rgb(230, 93, 93);">&nbsp &nbsp &nbsp &nbspCats have ____ lives.</h2><br/>
-                    <h2 style="color:rgb(230, 93, 93);">YZXYCZXYK (encoding and offsets right)</h2>
+                    <h2 style="color:rgb(230, 93, 93);">&nbsp Username: What Cipher did Julius Caesar use?</h2><br/>
+                    <h2 style="color:rgb(230, 93, 93);">Password: Give me the first 9 digits of the answer </h2><br/>
+                    <img src="images/calc.png" class="calcEquation">
                 </marquee>
             </section>
-
-
-            <section class="column small-12 submitArea" style="text-align: center; margin-top: 200px; color: black;">
+            <section class="column small-12 submitArea authMargin3">
                 <form method="POST" action="codebreaker.html" onsubmit="return validateInput(event)">
                     <h2>
                         Enter Below
@@ -76,7 +75,7 @@
                             Username:
                         </label>
 
-                        <input type="text" id="username" name="username">
+                        <input style="color: black" type="text" id="username" name="username">
                     </p>
                     
 
@@ -85,13 +84,13 @@
                             Password:
                         </label>
 
-                        <input type="password" id="password" name="password"> 
+                        <input style="color: black" type="password" id="password" name="password"> 
                     </p>
                     
                     <div style="margin-top: 10px; text-align: center; color: red;" id="failMsg"></div>
                     <div style="margin-top: 10px; text-align: center; color: rgb(43, 255, 0);" id="successMsg"></div>
 
-                    <input style="margin-top: 30px;" type="submit" value="submit">
+                    <input style="margin-top: 30px; color: black;" type="submit" value="submit">
 
                     
                 </form>
@@ -100,8 +99,6 @@
 
     </div>
     
-
-
 </body>
 
 </html>
@@ -109,8 +106,8 @@
 
 
 <!-------------------------------->
-<!--Good Job on figuring the Caesar Cipher to INSPECT this page-->
-<!--LOOK HERE TO SOLVE THE PUZZLE-->
-<!--Username - Find the name of the Favicon-->
-<!--Password - Find the name of the background image used here and find the 3rd HASH of that name.-->
-<!--Found the name of the background image? Head to this website: https://decoded-mobile-hashing.herokuapp.com/-->
+<!--
+    Answers: 
+    Username - "Caesar Cipher"
+    Password - "314159265"
+-->
