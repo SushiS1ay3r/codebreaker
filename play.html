@@ -9,9 +9,12 @@
     <meta name="description" content="codebreaker"> 
     <link rel="icon" type="image/png" href="images/anonymous.png">
     <link href="mobile.css" rel="stylesheet">
+    <link href="game.css" rel="stylesheet">
     <link href="normalize.css" rel="stylesheet">
     <link href="play.css" rel="stylesheet">
     <script src="script.js" async></script>
+    <script src="play.js" async></script>
+
    
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,15 +40,40 @@
 
 </head>
 
-<body>
-    <div class="clearfix hackerBG">
-        <div class="row limited">
+<body  class="hackerBG">
+    <div class="clearfix ">
+        <div class="row limited playContainer">
             <section class="column small-12">
-                
-                    
+                <!--credits to MkDay https://codepen.io/MkDay/pen/YzryPwE-->
+                <div id="container"> 
+                    <div id="top-box"></div> 
+                    <div id="bottom-box"></div>
+                </div>
+                <!---------------------ends here------------------------------------>
                 </section> 
             </section>
 
+            <section class="column small-12  playContainer">
+                <input type="text" style="font-size: 50px; text-align: center; color: rgb(130, 226, 255)" id="vaultDisplay" readonly>
+                
+                <div class="playContainer2">
+                    <button id="buttonOne" onclick="addDigits(1)">1</button>
+                    <button id="buttonTwo" onclick="addDigits(2)">2</button>
+                    <button id="buttonThree" onclick="addDigits(3)">3</button>
+                </div>
+
+                <div class="playContainer2">
+                    <button id="clearButton" onclick="clearButton()">Clear</button>
+                </div>
+
+                <h1 style="font-size: 150px; margin-top: 30px; margin-bottom: -30px; color:blueviolet">LOGGER</h1>
+                <div id="logContainer">
+                    
+                </div>
+                
+            </section> 
+
+            
         </div>
     </div>
     

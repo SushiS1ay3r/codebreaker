@@ -18,6 +18,7 @@
 
 body {
     margin: 0;
+    font-family: fantasy;
 }
 
 /* HTML5 display definitions
@@ -249,7 +250,6 @@ samp {
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
 
-button,
 input,
 optgroup,
 select,
